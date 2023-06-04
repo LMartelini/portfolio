@@ -1,0 +1,336 @@
+/*
+    Configurações gerais
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1C1C1C;
+    font-family:sans-serif;
+}
+
+/*
+    Cabeçalho do portfólio
+*/
+.container{
+    width: 1200px;
+    height: 2000px;
+    margin: 0 auto;
+    border: 1px solid green;
+}
+
+header{
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabeçalho{
+    display: flex;
+    gap: 14px;
+}
+
+.cabeçalho p{
+    cursor: pointer;
+}
+
+.logo{
+    margin-left: 50px;
+}
+
+/*
+    Início parte principal
+
+    primeira seção
+*/
+
+main{
+    margin-top: 90px;
+    margin-left: 75px;
+    color: rgb(199, 207, 214);
+}
+
+h1{
+    font-size: 35px;
+}
+
+.about-me{
+    letter-spacing: 1px;
+    font-size: 25px;   
+}
+
+.img1{
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
+}
+
+.texto-principal{
+    width: 75%;
+}
+
+.alinharTextoImagem{
+    display: flex;
+    justify-content: space-around;
+}
+
+.primarybutton{
+    background-color: #294883;
+    border: #294883;    
+    border-radius: 100%;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    cursor: pointer;
+}
+
+.curriculo{
+    padding: 6px 20px;
+    border-radius: 4px;
+    color: rgb(219, 226, 231);
+    background-color: #836429;
+    border: #836429; 
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 16px;
+}
+
+.curriculo img  {
+    margin-bottom: 6px;
+}
+
+.botoes{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 670px;
+    gap: 100px;
+}
+
+.divisao-primarybutton{
+    display: flex;
+    gap: 30px;
+}
+
+/*
+    fim primeira seção
+
+    início segunda seção
+*/
+
+h2{
+    margin-left: 400px;
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+hr{
+    margin-left: 390px;
+}
+
+.projetos-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projeto{
+    display: flex;
+    gap: 32px;
+    margin-top: 50px;
+}
+
+.projeto img{
+    border-radius: 4px;
+}
+
+.projeto-txt{
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40%;
+}
+
+.img-projeto{
+    width: 350px;
+    height: 200px;
+}
+
+.projeto-txt h3 {
+    font-size: 32px;
+}
+
+.projeto-txt p {
+    font-size: 16px;
+}
+
+
+.button-section2{
+    width: 160px;
+    background-color: #294883;
+    color: beige;
+    border: transparent;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+    margin-top: 12px;
+    gap: 8px;
+}
+
+/*
+    fim segunda seção
+*/
+
+/*
+    início terceira seção
+*/
+
+.imagens-section3{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.h2-section3 {
+    margin-left: 420px;
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.hr-section3{
+    margin-left: 400px;
+}
+
+
+/* fim terceira seção */
+
+
+/*
+    início quarta seção
+*/
+
+.botoes-section4{
+    margin-top: 60px;
+    display: flex;
+    margin-left: 230px;
+    gap: 40px;
+}
+
+.wpp{
+    padding: 9px 70px;
+    color: aliceblue;
+    background-color: #25D366;
+    border: #25D366;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.img-wpp{
+    width: 30px;
+    height: 30px;
+}
+
+.email{
+    padding: 9px 15px;
+    color: aliceblue;
+    border-radius: 4px;
+    background-color: #535353;
+    border: #535353;
+    display: flex;
+    align-items: center;
+}
+
+.divisaoButtonSection4{
+    display: flex;
+    gap: 30px;
+    margin-left: 490px;
+    margin-top: 50px;
+    
+}
+
+
+/* footer */
+
+
+footer{
+    color: azure;
+    margin-left: 500px;
+    margin-top: 50px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.img-footer{
+    border-radius: 100%;
+    
+}
+
+/* aplicando responsividade */
+
+@media (max-width: 1000px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .cabeçalho{
+        justify-content: center;
+    }
+    
+    .alinharTextoImagem{
+        gap: 30px;
+    }
+
+    .botoes{
+       margin-left: auto;
+       margin-top: 20px;
+    }
+
+    h2{
+        margin-left: auto;
+    }
+
+    hr{
+        margin-left: 0.1rem;
+        width: 200px;
+    }
+
+    .h2-section3{
+        margin-left: auto;
+    }
+
+    .hr-section3{
+        margin-left: 0.1rem;
+        width: 180px;
+    }
+
+    .botoes-section4{
+        margin-left: auto;
+    }
+
+    .divisaoButtonSection4{
+        margin-left: auto;
+    }
+
+    footer{
+        margin-left: 78px;
+    }
+
+}
