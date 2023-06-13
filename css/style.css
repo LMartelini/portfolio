@@ -5,11 +5,19 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: rgb(199, 207, 214);
+    scroll-behavior: smooth;
 }
 
 body{
     background-color: #1C1C1C;
     font-family:sans-serif;
+    letter-spacing: 1px;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
 }
 
 /*
@@ -17,12 +25,12 @@ body{
 */
 .container{
     width: 1200px;
-    height: 2000px;
     margin: 0 auto;
+    margin-bottom: 50px;
 }
 
 header{
-    color: aliceblue;
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
 }
@@ -49,16 +57,16 @@ header{
 main{
     margin-top: 90px;
     margin-left: 75px;
-    color: rgb(199, 207, 214);
 }
 
 h1{
-    font-size: 35px;
+    font-size: 48px;
 }
 
 .about-me{
-    letter-spacing: 1px;
-    font-size: 25px;   
+    letter-spacing: 2px;
+    font-size: 22px;   
+    margin-top: 16px;
 }
 
 .img1{
@@ -73,7 +81,7 @@ h1{
 
 .alinharTextoImagem{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .primarybutton{
@@ -93,7 +101,6 @@ button{
 .curriculo{
     padding: 6px 20px;
     border-radius: 4px;
-    color: rgb(219, 226, 231);
     background-color: #836429;
     border: #836429; 
     display: flex;
@@ -109,9 +116,9 @@ button{
 .botoes{
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     margin-top: 30px;
-    margin-left: 670px;
-    gap: 100px;
+    gap: 130px;
 }
 
 .divisao-primarybutton{
@@ -126,24 +133,26 @@ button{
 */
 
 h2{
-    margin-left: 400px;
-    margin-top: 50px;
+    /* margin-left: 400px; */
+    margin-top: 60px;
     font-size: 30px;
 }
 
 hr{
-    margin-left: 390px;
+    /* margin-left: 400px; */
+    margin-bottom: 50px;
 }
 
 .projetos-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 16px;
 }
 
 .projeto{
     display: flex;
-    gap: 32px;
+    gap: 80px;
     margin-top: 50px;
 }
 
@@ -160,8 +169,8 @@ hr{
 }
 
 .img-projeto{
-    width: 400px;
-    height: 260px;
+    width: 370px;
+    height: 230px;
 }
 
 .projeto-txt h3 {
@@ -169,14 +178,13 @@ hr{
 }
 
 .projeto-txt p {
-    font-size: 16px;
+    font-size: 17px;
 }
 
 
 .button-section2{
     width: 160px;
     background-color: #294883;
-    color: beige;
     border: transparent;
     border-radius: 4px;
     display: flex;
@@ -185,11 +193,6 @@ hr{
     padding: 5px 0;
     margin-top: 12px;
     gap: 8px;
-}
-
-.button-section2 a{
-    text-decoration: none;
-    color: beige;
 }
 
 /*
@@ -204,14 +207,10 @@ hr{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-top: 30px;
 }
 
-.h2-section3 {
-    margin-left: 420px;
-    margin-top: 50px;
-    font-size: 30px;
-}
 
 .hr-section3{
     margin-left: 400px;
@@ -234,7 +233,6 @@ hr{
 
 .wpp{
     padding: 9px 70px;
-    color: aliceblue;
     background-color: #25D366;
     border: #25D366;
     border-radius: 4px;
@@ -245,22 +243,17 @@ hr{
 
 .wpp a{
     text-decoration: none;
-    color: aliceblue;
-}
-
-.img-wpp{
-    width: 25px;
-    height: 25px;
 }
 
 .email{
-    padding: 16px 54px;
-    color: aliceblue;
+    padding: 9px 47px;
     border-radius: 4px;
     background-color: #535353;
     border: #535353;
     display: flex;
+    gap: 16px;
     align-items: center;
+    cursor: default;
 }
 
 .divisaoButtonSection4{
@@ -276,7 +269,6 @@ hr{
 
 
 footer{
-    color: azure;
     margin-left: 500px;
     margin-top: 50px;
 }
@@ -289,7 +281,16 @@ footer{
 
 .img-footer{
     border-radius: 100%;
-    
+}
+
+.container-titulo {
+    display: flex;
+    justify-content: center;
+}
+
+.container-titulo h2 {
+    border-bottom: 1px solid #836429;
+    padding-bottom: 4px;
 }
 
 /* aplicando responsividade */
@@ -325,10 +326,17 @@ footer{
 
     .alinharTextoImagem {
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .imagens-section3 {
+        justify-content: center;
+        gap: 32px;
+
     }
 
     .img1 {
-        width: 100%;
+        width: 50%;
         height: auto;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -339,17 +347,13 @@ footer{
         align-items: center;
         margin-left: 0;
         margin-top: 20px;
+        gap: 16px;
     }
 
     .divisao-primarybutton {
         display: flex;
         gap: 10px;
         margin-top: 10px;
-    }
-
-    h2, .h2-section3 {
-        margin-left: 0;
-        margin-top: 30px;
     }
 
     hr {
@@ -364,15 +368,19 @@ footer{
 
     .projeto {
         flex-direction: column;
+        align-items: center;
         gap: 20px;
     }
 
     .projeto-txt {
-        width: 100%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .img-projeto {
-        width: 100%;
+        width: 50%;
         height: auto;
     }
 
